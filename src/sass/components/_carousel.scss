@@ -1,0 +1,44 @@
+.carousel-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+
+.carousel-img {
+  border-radius: 25px;
+  object-fit: cover;
+  width: 100%;
+  height: 400px;
+}
+
+.carousel-button-left {
+  background-color: transparent;
+  border: none;
+  color: rgba(255, 255, 255, 1);
+  z-index: 0;
+  left: 2%;
+  position: absolute;
+}
+
+.carousel-button-right {
+  background-color: transparent;
+  border: none;
+  color: rgba(255, 255, 255, 1);
+  z-index: 0;
+  right: 2%;
+  position: absolute;
+}
+
+.carousel-chevron {
+  height: 100px;
+}
+
+.carousel-counter {
+  position: absolute;
+  bottom: 7%;
+  right: 50%;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+}

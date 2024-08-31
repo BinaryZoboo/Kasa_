@@ -1,0 +1,194 @@
+.Cardsection {
+  width: 25%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  cursor: pointer;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    background-size: cover;
+    background-position: center;
+    display: block;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 30%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+    z-index: 1;
+  }
+
+  h2 {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    padding: 5px 10px;
+    background-color: transparent;
+    color: white;
+    text-align: left;
+    font-size: 18px;
+    z-index: 2;
+    margin: 0;
+  }
+}
+
+.boxKey {
+  height: 340px;
+  width: 340px;
+  position: relative;
+  display: flex;
+  margin: 40px 30px 30px 30px;
+  border-radius: 10px;
+  z-index: 1;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (max-width: 900px) and (min-width: 600px) {
+    margin: 3rem 0 0 0;
+    width: 100%;
+  }
+
+  @media (max-width: 600px) and (min-width: 300px) {
+    margin: 1rem 0 0 0;
+    width: 100%;
+    height: 255px;
+  }
+}
+
+.Gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.galleryImage {
+  background: #f7f7f7;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  border-radius: 25px;
+  width: 100%;
+
+  @media (max-width: 900px) and (min-width: 600px) {
+    width: 100%;
+    background: transparent;
+    display: flex;
+    gap: 2rem;
+  }
+
+  @media (max-width: 600px) and (min-width: 320px) {
+    width: 100%;
+    background: transparent;
+    display: flex;
+    gap: 2rem;
+  }
+
+  @media (max-width: 320px) and (min-width: 300px) {
+    width: 100%;
+    background: transparent;
+    display: flex;
+    gap: 2rem;
+  }
+}
+
+.boxTitre {
+  position: absolute;
+  left: 5.88%;
+  bottom: 2px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 142.6%;
+  display: flex;
+  align-items: flex-end;
+  color: white;
+
+  @media (max-width: 900px) and (min-width: 800px) {
+    font-size: 21.5px;
+  }
+
+  @media (max-width: 800px) and (min-width: 600px) {
+    font-size: 20px;
+  }
+
+  @media (max-width: 600px) and (min-width: 525px) {
+    font-size: 17px;
+  }
+
+  @media (max-width: 525px) and (min-width: 450px) {
+    font-size: 16px;
+  }
+
+  @media (max-width: 450px) and (min-width: 300px) {
+    font-size: 13px;
+  }
+}
+
+.boxKey {
+  height: 340px;
+  width: 340px;
+  position: relative;
+  display: flex;
+  margin: 40px 30px 30px 30px;
+  border-radius: 10px;
+  z-index: 1;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (max-width: 900px) and (min-width: 600px) {
+    margin: 3rem 0 0 0;
+    width: 100%;
+  }
+
+  @media (max-width: 600px) and (min-width: 300px) {
+    margin: 1rem 0 0 0;
+    width: 100%;
+    height: 255px;
+  }
+}
+
+.kasa-Body {
+  width: 100%;
+}
+
+.sectionP {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sectionP p {
+  color: white;
+  font-size: 38px;
+  display: flex;
+  width: 95%;
+  height: 220px;
+  background-position: center;
+  object-fit: cover;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+  background-size: cover;
+  background-color: #0000004d;
+  background-blend-mode: darken;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+  .galleryImage a {
+    width: 100%;
+  }
+}

@@ -1,0 +1,18 @@
+.full-name {
+  max-width: 90px;
+  word-wrap: break-word;
+  text-align: center;
+  font-size: 18px;
+  color: $main-color;
+  font-weight: 500;
+}
+
+.img-proprio {
+  border-radius: 50%;
+}
+
+.logement-host {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}

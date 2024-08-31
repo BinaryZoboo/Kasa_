@@ -1,0 +1,14 @@
+.stars {
+  display: flex;
+  justify-content: flex-end;
+  height: 100%;
+  gap: 10px;
+}
+.rating-star-pleine {
+  height: 100%;
+  color: $main-color;
+}
+.rating-star-vide {
+  height: 100%;
+  color: rgba(227, 227, 227, 1);
+}

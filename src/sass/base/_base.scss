@@ -1,0 +1,19 @@
+html,
+body,
+#root {
+  max-width: 1440px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0;
+  --res: calc(0.01 * 10vmin);
+}
+
+a {
+  color: initial;
+  text-decoration: none;
+}
+
+* {
+  font-family: "Montserrat";
+  padding: 0;
+}

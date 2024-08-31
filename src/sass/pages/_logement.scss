@@ -1,0 +1,155 @@
+.logement-main {
+  margin: 0 3%;
+  .section-log2 {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 2% 0 3%;
+  }
+  .logement-header {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .logement-compo {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+}
+.logement-host {
+  height: 100%;
+}
+.logement-tags {
+  display: flex;
+  margin: 1% 0 0;
+  height: 30px;
+  width: 100%;
+  gap: 2%;
+}
+
+.logement-info {
+  height: 60%;
+  width: 100%;
+  h1 {
+    font-size: 24px;
+    margin: 0;
+    font-weight: 500;
+    color: $main-color;
+  }
+  p {
+    margin: 1% 0;
+    font-size: 14px;
+    font-weight: 500;
+  }
+}
+.section-log1 {
+  margin-top: 1%;
+  display: flex;
+  width: 100%;
+  height: fit-content;
+}
+.accordeon-container {
+  width: 46%;
+}
+.img-proprio {
+  height: 70px;
+}
+.tag {
+  font-size: 11px;
+  width: 120px;
+}
+.stars {
+  align-items: flex-end;
+  svg {
+    height: 30px;
+  }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .tag {
+    font-size: 10px;
+    width: 110px;
+  }
+  .stars svg {
+    height: 25px;
+  }
+  .img-proprio {
+    height: 70px;
+  }
+}
+
+/* Mobil */
+@media (max-width: 435px) {
+  .stars {
+    align-items: center;
+    svg {
+      height: 25px;
+    }
+  }
+  .img-proprio {
+    height: 50px;
+  }
+  .logement-tags {
+    width: 100%;
+    height: 26%;
+    margin: 0;
+  }
+  .tag {
+    font-size: 9px;
+    width: 30%;
+  }
+  .logement-info {
+    h1 {
+      font-size: 20px;
+    }
+    p {
+      font-size: 14px;
+      margin: 2% 0;
+    }
+  }
+  .carousel-container {
+    img {
+      height: 300px;
+    }
+    svg {
+      height: 70px;
+    }
+  }
+  .carousel-counter {
+    display: none;
+  }
+  .section-log1 {
+    flex-direction: column;
+    justify-content: space-between;
+    height: 162px;
+    .logement-header {
+      width: 100%;
+      height: 70%;
+    }
+    .logement-compo {
+      width: 100%;
+      height: 25%;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      margin: 2% 0 0;
+      div {
+        width: fit-content;
+        height: 100%;
+      }
+    }
+  }
+  .logement-main {
+    .section-log2 {
+      flex-direction: column;
+      margin: 5% 0 7%;
+      gap: 20px;
+    }
+  }
+  .accordeon-container {
+    width: 100%;
+  }
+}
